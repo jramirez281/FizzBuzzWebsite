@@ -1,4 +1,5 @@
 let i = 0;
+// Will increment the score at the click of the button. 
 function increment()
    {
    document.getElementById("IncrementValue").innerHTML = i++;
