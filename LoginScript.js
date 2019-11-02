@@ -17,7 +17,9 @@ function createIncrementValue(iValue) {
   let incrementValue = document.createElement('p');
 
   //perform the fizzbuzz test on the user's score from the last session
-  if (iValue % 3 == 0 && iValue % 5 == 0)
+  if (iValue == 0)
+    iValue = 0;
+  else if (iValue % 3 == 0 && iValue % 5 == 0)
     iValue = 'FizzBuzz';
   else if (iValue % 3 == 0)
     iValue = 'Fizz';
